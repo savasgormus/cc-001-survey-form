@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
 </head>
+
 <body>
     <div id="main">
         <form action="#">
             <h1>Clarusway Survey Form</h2>
-            <h4>Thank you for taking the time to help us improve the platform</h4>
-            <label for="username">Name</label>
-            <br>
-            <input type="text" name="User-Name" id="username" placeholder="Enter your name">
-            <br><br>
-            <label for="surname">Surname</label>
-            <br>
-            <input type="text" name="Sur-Name" id="surname" placeholder="Enter your surname">
-            <br><br>
-            <label for="usermail">Email</label>
-            <br>
-            <input type="email" name="User-Mail" id="email" placeholder="user@clarusway.com">
-            <br>
-            <h4>Which option best describes your current role?</h4>
-            <select name="" id="">
-                <option value=""></option>
-            </select>
-
-
-
-
-
-
-
-
+                <h4>Thank you for taking the time to help us improve the platform</h4>
+                <div id="user-info">
+                    <label for="username">Name</label>
+                    <br>
+                    <input type="text" name="User-Name" id="username" placeholder="Enter your name">
+                    <br><br>
+                    <label for="surname">Surname</label>
+                    <br>
+                    <input type="text" name="Sur-Name" id="surname" placeholder="Enter your surname">
+                    <br><br>
+                    <label for="usermail">Email</label>
+                    <br>
+                    <input type="email" name="User-Mail" id="email" placeholder="user@clarusway.com">
+                    <br>
+                </div>
+                <div id="user-comments">
+                    <h4>Which option best describes your current role?</h4>
+                    <select name="user-role">
+                        <option value="default" selected>Select an option</option>
+                        <option value="mentor">Mentor</option>
+                        <option value="instructor">Instructor</option>
+                        <option value="student">Student</option>
+                    </select>
+                    <br>
+                    <h4>Would you recommend Clarusway to a friend?</h4>
+                    <input type="radio" name="user-recommend" id="recommend-1" value="definetaly yes">
+                    <label for="recommend-1">Definetaly yes!</label>
+                    <br><br>
+                    <input type="radio" name="user-recommend" id="recommend-2" value="yes">
+                    <label for="recommend-2">Yes</label>
+                    <br><br>
+                    <input type="radio" name="user-recommend" id="recommend-3" value="no">
+                    <label for="recommend-3">No</label>
+                    <br><br>
+                    <input type="radio" name="user-recommend" id="recommend-4" value="definetaly yes">
+                    <label for="recommend-4">Definetaly no!</label>
+                    <br>
+                    <h4>What is your favorite feature of Clarusway?</h4>
+                    <select name="user-favorite">
+                        <option value="default" selected>Select an option</option>
+                        <option value="cms">CMS</option>
+                        <option value="mentor">Mentoring</option>
+                        <option value="class">In-Class</option>
+                        <option value="workshop">Workshop-Teamwork</option>
+                    </select>
+                
+                
+                
+                
+                
+                
+                
+                
+                </div>
         </form>
     </div>
 </body>
+
 </html>
